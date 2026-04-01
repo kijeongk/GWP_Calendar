@@ -4,7 +4,7 @@ const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const DATA_DIR = process.env.RENDER ? '/tmp/data' : path.join(__dirname, 'data');
+const DATA_DIR = path.join(__dirname, 'data');
 const DATA_FILE = path.join(DATA_DIR, 'calendar-data.json');
 
 app.use(express.json());
